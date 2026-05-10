@@ -1,0 +1,478 @@
+{
+  "roles": [
+    {
+      "role_id": 1,
+      "name": "ADMIN"
+    },
+    {
+      "role_id": 2,
+      "name": "SALES_ADVISOR"
+    },
+    {
+      "role_id": 3,
+      "name": "OPTOMETRIST"
+    }
+  ],
+
+  "employees": [
+    {
+      "employee_id": 1,
+      "employee_uuid": "emp-001-uuid",
+      "username": "admin01",
+      "password_hash": "hashed_password_1",
+      "role_id": 1,
+      "name": "Carlos Mendoza",
+      "phone": "999111222",
+      "department": "Management",
+      "status": "ACTIVE",
+      "hire_date": "2024-01-10"
+    },
+    {
+      "employee_id": 2,
+      "employee_uuid": "emp-002-uuid",
+      "username": "sales01",
+      "password_hash": "hashed_password_2",
+      "role_id": 2,
+      "name": "Lucia Ramirez",
+      "phone": "988222333",
+      "department": "Sales",
+      "status": "ACTIVE",
+      "hire_date": "2024-03-15"
+    },
+    {
+      "employee_id": 3,
+      "employee_uuid": "emp-003-uuid",
+      "username": "opto01",
+      "password_hash": "hashed_password_3",
+      "role_id": 3,
+      "name": "Jorge Castillo",
+      "phone": "977333444",
+      "department": "Optometry",
+      "status": "ACTIVE",
+      "hire_date": "2024-05-20"
+    }
+  ],
+
+  "sessions": [
+    {
+      "session_id": 1,
+      "session_uuid": "sess-001-uuid",
+      "employee_id": 1,
+      "token": "token_admin_123",
+      "expires_at": "2026-06-01T12:00:00"
+    },
+    {
+      "session_id": 2,
+      "session_uuid": "sess-002-uuid",
+      "employee_id": 2,
+      "token": "token_sales_456",
+      "expires_at": "2026-06-01T15:00:00"
+    },
+    {
+      "session_id": 3,
+      "session_uuid": "sess-003-uuid",
+      "employee_id": 3,
+      "token": "token_opto_789",
+      "expires_at": "2026-06-02T10:00:00"
+    }
+  ],
+
+  "patients": [
+    {
+      "patient_id": 1,
+      "customer_uuid": "pat-001-uuid",
+      "first_name": "Ana",
+      "last_name": "Torres",
+      "dni": "71234567",
+      "phone": "955111222",
+      "email": "ana.torres@email.com",
+      "birth_date": "1995-02-14"
+    },
+    {
+      "patient_id": 2,
+      "customer_uuid": "pat-002-uuid",
+      "first_name": "Miguel",
+      "last_name": "Rojas",
+      "dni": "72345678",
+      "phone": "955333444",
+      "email": "miguel.rojas@email.com",
+      "birth_date": "1988-11-09"
+    },
+    {
+      "patient_id": 3,
+      "customer_uuid": "pat-003-uuid",
+      "first_name": "Sofia",
+      "last_name": "Perez",
+      "dni": "73456789",
+      "phone": "955555666",
+      "email": "sofia.perez@email.com",
+      "birth_date": "2001-07-30"
+    }
+  ],
+
+  "clinicalRecords": [
+    {
+      "record_id": 1,
+      "clinical_record_uuid": "record-001-uuid",
+      "patient_id": 1
+    },
+    {
+      "record_id": 2,
+      "clinical_record_uuid": "record-002-uuid",
+      "patient_id": 2
+    },
+    {
+      "record_id": 3,
+      "clinical_record_uuid": "record-003-uuid",
+      "patient_id": 3
+    }
+  ],
+
+  "prescriptions": [
+    {
+      "prescription_id": 1,
+      "prescription_uuid": "presc-001-uuid",
+      "clinical_record_id": 1,
+      "od_sphere": -1.25,
+      "od_cylinder": -0.50,
+      "od_axis": 90,
+      "oi_sphere": -1.00,
+      "oi_cylinder": -0.25,
+      "oi_axis": 85,
+      "notes": "Mild myopia",
+      "created_at": "2026-05-01T10:00:00"
+    },
+    {
+      "prescription_id": 2,
+      "prescription_uuid": "presc-002-uuid",
+      "clinical_record_id": 2,
+      "od_sphere": -2.00,
+      "od_cylinder": -1.00,
+      "od_axis": 100,
+      "oi_sphere": -1.75,
+      "oi_cylinder": -0.75,
+      "oi_axis": 95,
+      "notes": "Astigmatism",
+      "created_at": "2026-05-02T11:30:00"
+    },
+    {
+      "prescription_id": 3,
+      "prescription_uuid": "presc-003-uuid",
+      "clinical_record_id": 3,
+      "od_sphere": 0.50,
+      "od_cylinder": 0.00,
+      "od_axis": 0,
+      "oi_sphere": 0.25,
+      "oi_cylinder": 0.00,
+      "oi_axis": 0,
+      "notes": "Reading glasses",
+      "created_at": "2026-05-03T09:15:00"
+    }
+  ],
+
+  "products": [
+    {
+      "product_id": 1,
+      "product_uuid": "prod-001-uuid",
+      "sku": "FRM-1001",
+      "name": "Classic Black Frame",
+      "product_type": "FRAME",
+      "price": 150.00,
+      "quantity": 20,
+      "minimum_stock_threshold": 5,
+      "material": "Acetate",
+      "brand": "VisionPro",
+      "color": "Black",
+      "lens_type": null,
+      "expiration_date": null,
+      "supplier_name": "Optic Supplier SAC"
+    },
+    {
+      "product_id": 2,
+      "product_uuid": "prod-002-uuid",
+      "sku": "LNS-2001",
+      "name": "Blue Light Lens",
+      "product_type": "LENS",
+      "price": 220.00,
+      "quantity": 35,
+      "minimum_stock_threshold": 10,
+      "material": null,
+      "brand": "ClearVision",
+      "color": null,
+      "lens_type": "Blue Light Filter",
+      "expiration_date": null,
+      "supplier_name": "Lens Import Peru"
+    },
+    {
+      "product_id": 3,
+      "product_uuid": "prod-003-uuid",
+      "sku": "SOL-3001",
+      "name": "Lens Cleaning Solution",
+      "product_type": "SOLUTION",
+      "price": 25.00,
+      "quantity": 50,
+      "minimum_stock_threshold": 8,
+      "material": null,
+      "brand": "CleanEyes",
+      "color": null,
+      "lens_type": null,
+      "expiration_date": "2027-01-15",
+      "supplier_name": "Health Vision SAC"
+    }
+  ],
+
+  "quotations": [
+    {
+      "quotation_id": 1,
+      "quotation_uuid": "quote-001-uuid",
+      "prescription_id": 1,
+      "total": 370.00,
+      "created_at": "2026-05-01T12:00:00"
+    },
+    {
+      "quotation_id": 2,
+      "quotation_uuid": "quote-002-uuid",
+      "prescription_id": 2,
+      "total": 440.00,
+      "created_at": "2026-05-02T14:00:00"
+    },
+    {
+      "quotation_id": 3,
+      "quotation_uuid": "quote-003-uuid",
+      "prescription_id": 3,
+      "total": 175.00,
+      "created_at": "2026-05-03T16:00:00"
+    }
+  ],
+
+  "quotationItems": [
+    {
+      "item_id": 1,
+      "quotation_id": 1,
+      "product_id": 1,
+      "quantity": 1,
+      "unit_price": 150.00
+    },
+    {
+      "item_id": 2,
+      "quotation_id": 1,
+      "product_id": 2,
+      "quantity": 1,
+      "unit_price": 220.00
+    },
+    {
+      "item_id": 3,
+      "quotation_id": 3,
+      "product_id": 3,
+      "quantity": 1,
+      "unit_price": 25.00
+    }
+  ],
+
+  "sales": [
+    {
+      "sale_id": 1,
+      "sale_uuid": "sale-001-uuid",
+      "employee_id": 2,
+      "quotation_id": 1,
+      "status": "PAID",
+      "total_amount": 370.00,
+      "deposit_amount": 200.00,
+      "outstanding_balance": 170.00,
+      "created_at": "2026-05-01T13:00:00"
+    },
+    {
+      "sale_id": 2,
+      "sale_uuid": "sale-002-uuid",
+      "employee_id": 2,
+      "quotation_id": 2,
+      "status": "PENDING",
+      "total_amount": 440.00,
+      "deposit_amount": 100.00,
+      "outstanding_balance": 340.00,
+      "created_at": "2026-05-02T15:00:00"
+    },
+    {
+      "sale_id": 3,
+      "sale_uuid": "sale-003-uuid",
+      "employee_id": 2,
+      "quotation_id": 3,
+      "status": "DELIVERED",
+      "total_amount": 175.00,
+      "deposit_amount": 175.00,
+      "outstanding_balance": 0.00,
+      "created_at": "2026-05-03T17:00:00"
+    }
+  ],
+
+  "payments": [
+    {
+      "payment_id": 1,
+      "sale_id": 1,
+      "amount_paid": 200.00,
+      "method": "CARD",
+      "paid_at": "2026-05-01T13:30:00"
+    },
+    {
+      "payment_id": 2,
+      "sale_id": 2,
+      "amount_paid": 100.00,
+      "method": "TRANSFER",
+      "paid_at": "2026-05-02T15:20:00"
+    },
+    {
+      "payment_id": 3,
+      "sale_id": 3,
+      "amount_paid": 175.00,
+      "method": "CASH",
+      "paid_at": "2026-05-03T17:15:00"
+    }
+  ],
+
+  "workOrders": [
+    {
+      "order_id": 1,
+      "work_order_uuid": "wo-001-uuid",
+      "sale_id": 1,
+      "status": "IN_PRODUCTION",
+      "priority": "NORMAL",
+      "is_rework": false,
+      "laboratory_name": "LabVision",
+      "estimated_date": "2026-05-10",
+      "created_at": "2026-05-01T14:00:00"
+    },
+    {
+      "order_id": 2,
+      "work_order_uuid": "wo-002-uuid",
+      "sale_id": 2,
+      "status": "RECEIVED",
+      "priority": "HIGH",
+      "is_rework": false,
+      "laboratory_name": "OpticLab",
+      "estimated_date": "2026-05-12",
+      "created_at": "2026-05-02T16:00:00"
+    },
+    {
+      "order_id": 3,
+      "work_order_uuid": "wo-003-uuid",
+      "sale_id": 3,
+      "status": "DELIVERED",
+      "priority": "URGENT",
+      "is_rework": false,
+      "laboratory_name": "FastLens",
+      "estimated_date": "2026-05-05",
+      "created_at": "2026-05-03T18:00:00"
+    }
+  ],
+
+  "notifications": [
+    {
+      "notification_id": 1,
+      "notification_uuid": "notif-001-uuid",
+      "work_order_id": 1,
+      "message": "Your order is currently in production.",
+      "status": "SENT",
+      "sent_at": "2026-05-02T08:00:00"
+    },
+    {
+      "notification_id": 2,
+      "notification_uuid": "notif-002-uuid",
+      "work_order_id": 2,
+      "message": "Your order has been received by the laboratory.",
+      "status": "PENDING",
+      "sent_at": null
+    },
+    {
+      "notification_id": 3,
+      "notification_uuid": "notif-003-uuid",
+      "work_order_id": 3,
+      "message": "Your glasses are ready for pickup.",
+      "status": "SENT",
+      "sent_at": "2026-05-04T09:30:00"
+    }
+  ],
+
+  "analyticsReports": [
+    {
+      "report_id": 1,
+      "report_uuid": "report-001-uuid",
+      "generated_by": 1,
+      "period": "2026-04",
+      "generated_at": "2026-05-01T20:00:00",
+      "total_revenue": 12000.50,
+      "total_transactions": 40,
+      "conversion_rate": 72.5,
+      "average_delivery_days": 4.5,
+      "on_time_delivery_rate": 90.0,
+      "rework_rate": 3.0,
+      "total_orders": 38,
+      "pending_balance_0_7": 1200.00,
+      "pending_balance_8_15": 400.00,
+      "pending_balance_16_30": 150.00,
+      "pending_balance_over_30": 50.00
+    },
+    {
+      "report_id": 2,
+      "report_uuid": "report-002-uuid",
+      "generated_by": 1,
+      "period": "2026-05",
+      "generated_at": "2026-06-01T20:00:00",
+      "total_revenue": 14500.75,
+      "total_transactions": 50,
+      "conversion_rate": 76.3,
+      "average_delivery_days": 4.0,
+      "on_time_delivery_rate": 92.1,
+      "rework_rate": 2.1,
+      "total_orders": 48,
+      "pending_balance_0_7": 1000.00,
+      "pending_balance_8_15": 350.00,
+      "pending_balance_16_30": 120.00,
+      "pending_balance_over_30": 40.00
+    },
+    {
+      "report_id": 3,
+      "report_uuid": "report-003-uuid",
+      "generated_by": 1,
+      "period": "2026-06",
+      "generated_at": "2026-07-01T20:00:00",
+      "total_revenue": 16200.00,
+      "total_transactions": 58,
+      "conversion_rate": 80.0,
+      "average_delivery_days": 3.8,
+      "on_time_delivery_rate": 95.0,
+      "rework_rate": 1.5,
+      "total_orders": 56,
+      "pending_balance_0_7": 800.00,
+      "pending_balance_8_15": 200.00,
+      "pending_balance_16_30": 100.00,
+      "pending_balance_over_30": 20.00
+    }
+  ],
+
+  "staffMetrics": [
+    {
+      "staff_metric_id": 1,
+      "report_id": 1,
+      "employee_name": "Lucia Ramirez",
+      "quotations_issued": 15,
+      "sales_closed": 10,
+      "total_revenue": 4500.00
+    },
+    {
+      "staff_metric_id": 2,
+      "report_id": 2,
+      "employee_name": "Lucia Ramirez",
+      "quotations_issued": 18,
+      "sales_closed": 14,
+      "total_revenue": 6200.00
+    },
+    {
+      "staff_metric_id": 3,
+      "report_id": 3,
+      "employee_name": "Lucia Ramirez",
+      "quotations_issued": 20,
+      "sales_closed": 16,
+      "total_revenue": 7100.00
+    }
+  ]
+}
