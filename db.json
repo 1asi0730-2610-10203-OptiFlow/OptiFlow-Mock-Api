@@ -13,7 +13,6 @@
       "name": "OPTOMETRIST"
     }
   ],
-
   "employees": [
     {
       "employee_id": 1,
@@ -52,7 +51,6 @@
       "hire_date": "2024-05-20"
     }
   ],
-
   "sessions": [
     {
       "session_id": 1,
@@ -76,40 +74,48 @@
       "expires_at": "2026-06-02T10:00:00"
     }
   ],
-
   "patients": [
     {
       "patient_id": 1,
       "customer_uuid": "pat-001-uuid",
-      "first_name": "Ana",
-      "last_name": "Torres",
-      "dni": "71234567",
-      "phone": "955111222",
-      "email": "ana.torres@email.com",
-      "birth_date": "1995-02-14"
+      "first_name": "Sarah",
+      "last_name": "Johnson",
+      "dni": "12345678",
+      "phone": "(555) 123-4567",
+      "email": "sarah.j@email.com",
+      "birth_date": "1989-06-15"
     },
     {
       "patient_id": 2,
       "customer_uuid": "pat-002-uuid",
-      "first_name": "Miguel",
-      "last_name": "Rojas",
-      "dni": "72345678",
-      "phone": "955333444",
-      "email": "miguel.rojas@email.com",
-      "birth_date": "1988-11-09"
+      "first_name": "Michael",
+      "last_name": "Chen",
+      "dni": "23456789",
+      "phone": "(555) 234-5678",
+      "email": "m.chen@email.com",
+      "birth_date": "1985-03-22"
     },
     {
       "patient_id": 3,
       "customer_uuid": "pat-003-uuid",
-      "first_name": "Sofia",
-      "last_name": "Perez",
-      "dni": "73456789",
-      "phone": "955555666",
-      "email": "sofia.perez@email.com",
-      "birth_date": "2001-07-30"
+      "first_name": "Emma",
+      "last_name": "Wilson",
+      "dni": "34567890",
+      "phone": "(555) 345-6789",
+      "email": "emma.w@email.com",
+      "birth_date": "1995-11-08"
+    },
+    {
+      "patient_id": 4,
+      "customer_uuid": "pat-004-uuid",
+      "first_name": "David",
+      "last_name": "Martínez",
+      "dni": "45678901",
+      "phone": "(555) 456-7890",
+      "email": "d.martinez@email.com",
+      "birth_date": "1978-09-30"
     }
   ],
-
   "clinicalRecords": [
     {
       "record_id": 1,
@@ -125,51 +131,90 @@
       "record_id": 3,
       "clinical_record_uuid": "record-003-uuid",
       "patient_id": 3
+    },
+    {
+      "record_id": 4,
+      "clinical_record_uuid": "record-004-uuid",
+      "patient_id": 4
     }
   ],
-
   "prescriptions": [
     {
       "prescription_id": 1,
       "prescription_uuid": "presc-001-uuid",
       "clinical_record_id": 1,
-      "od_sphere": -1.25,
-      "od_cylinder": -0.50,
+      "od_sphere": -2.5,
+      "od_cylinder": -0.75,
       "od_axis": 90,
-      "oi_sphere": -1.00,
-      "oi_cylinder": -0.25,
+      "oi_sphere": -2.75,
+      "oi_cylinder": -0.5,
       "oi_axis": 85,
-      "notes": "Mild myopia",
-      "created_at": "2026-05-01T10:00:00"
+      "addition": null,
+      "notes": "Paciente reporta mayor tiempo frente a pantallas. Se recomienda filtro de luz azul.",
+      "created_at": "2026-04-15T10:00:00",
+      "doctor_name": "Dra. Emily Smith"
     },
     {
       "prescription_id": 2,
       "prescription_uuid": "presc-002-uuid",
-      "clinical_record_id": 2,
-      "od_sphere": -2.00,
-      "od_cylinder": -1.00,
-      "od_axis": 100,
-      "oi_sphere": -1.75,
-      "oi_cylinder": -0.75,
-      "oi_axis": 95,
-      "notes": "Astigmatism",
-      "created_at": "2026-05-02T11:30:00"
+      "clinical_record_id": 1,
+      "od_sphere": -2.25,
+      "od_cylinder": -0.75,
+      "od_axis": 98,
+      "oi_sphere": -2.5,
+      "oi_cylinder": -0.25,
+      "oi_axis": 80,
+      "addition": null,
+      "notes": "Control anual.",
+      "created_at": "2025-03-10T11:00:00",
+      "doctor_name": "Dra. Emily Smith"
     },
     {
       "prescription_id": 3,
       "prescription_uuid": "presc-003-uuid",
-      "clinical_record_id": 3,
-      "od_sphere": 0.50,
-      "od_cylinder": 0.00,
+      "clinical_record_id": 2,
+      "od_sphere": -1.25,
+      "od_cylinder": 0.0,
       "od_axis": 0,
-      "oi_sphere": 0.25,
-      "oi_cylinder": 0.00,
+      "oi_sphere": -1.5,
+      "oi_cylinder": -0.25,
+      "oi_axis": 75,
+      "addition": null,
+      "notes": "Miopía leve.",
+      "created_at": "2026-04-10T09:00:00",
+      "doctor_name": "Dra. Emily Smith"
+    },
+    {
+      "prescription_id": 4,
+      "prescription_uuid": "presc-004-uuid",
+      "clinical_record_id": 3,
+      "od_sphere": 1.0,
+      "od_cylinder": 0.25,
+      "od_axis": 10,
+      "oi_sphere": 1.25,
+      "oi_cylinder": 0.5,
+      "oi_axis": 15,
+      "addition": 2.0,
+      "notes": "Hipermetropía con presbicia inicial.",
+      "created_at": "2026-04-18T14:00:00",
+      "doctor_name": "Dra. Emily Smith"
+    },
+    {
+      "prescription_id": 5,
+      "prescription_uuid": "presc-005-uuid",
+      "clinical_record_id": 4,
+      "od_sphere": -3.0,
+      "od_cylinder": -0.5,
+      "od_axis": 110,
+      "oi_sphere": -3.25,
+      "oi_cylinder": 0.0,
       "oi_axis": 0,
-      "notes": "Reading glasses",
-      "created_at": "2026-05-03T09:15:00"
+      "addition": null,
+      "notes": "Miopía moderada.",
+      "created_at": "2026-04-12T16:00:00",
+      "doctor_name": "Dra. Emily Smith"
     }
   ],
-
   "products": [
     {
       "product_id": 1,
@@ -177,7 +222,7 @@
       "sku": "FRM-1001",
       "name": "Classic Black Frame",
       "product_type": "FRAME",
-      "price": 150.00,
+      "price": 150.0,
       "quantity": 20,
       "minimum_stock_threshold": 5,
       "material": "Acetate",
@@ -193,7 +238,7 @@
       "sku": "LNS-2001",
       "name": "Blue Light Lens",
       "product_type": "LENS",
-      "price": 220.00,
+      "price": 220.0,
       "quantity": 35,
       "minimum_stock_threshold": 10,
       "material": null,
@@ -209,7 +254,7 @@
       "sku": "SOL-3001",
       "name": "Lens Cleaning Solution",
       "product_type": "SOLUTION",
-      "price": 25.00,
+      "price": 25.0,
       "quantity": 50,
       "minimum_stock_threshold": 8,
       "material": null,
@@ -220,55 +265,52 @@
       "supplier_name": "Health Vision SAC"
     }
   ],
-
   "quotations": [
     {
       "quotation_id": 1,
       "quotation_uuid": "quote-001-uuid",
       "prescription_id": 1,
-      "total": 370.00,
+      "total": 370.0,
       "created_at": "2026-05-01T12:00:00"
     },
     {
       "quotation_id": 2,
       "quotation_uuid": "quote-002-uuid",
       "prescription_id": 2,
-      "total": 440.00,
+      "total": 440.0,
       "created_at": "2026-05-02T14:00:00"
     },
     {
       "quotation_id": 3,
       "quotation_uuid": "quote-003-uuid",
       "prescription_id": 3,
-      "total": 175.00,
+      "total": 175.0,
       "created_at": "2026-05-03T16:00:00"
     }
   ],
-
   "quotationItems": [
     {
       "item_id": 1,
       "quotation_id": 1,
       "product_id": 1,
       "quantity": 1,
-      "unit_price": 150.00
+      "unit_price": 150.0
     },
     {
       "item_id": 2,
       "quotation_id": 1,
       "product_id": 2,
       "quantity": 1,
-      "unit_price": 220.00
+      "unit_price": 220.0
     },
     {
       "item_id": 3,
       "quotation_id": 3,
       "product_id": 3,
       "quantity": 1,
-      "unit_price": 25.00
+      "unit_price": 25.0
     }
   ],
-
   "sales": [
     {
       "sale_id": 1,
@@ -276,9 +318,9 @@
       "employee_id": 2,
       "quotation_id": 1,
       "status": "PAID",
-      "total_amount": 370.00,
-      "deposit_amount": 200.00,
-      "outstanding_balance": 170.00,
+      "total_amount": 370.0,
+      "deposit_amount": 200.0,
+      "outstanding_balance": 170.0,
       "created_at": "2026-05-01T13:00:00"
     },
     {
@@ -287,9 +329,9 @@
       "employee_id": 2,
       "quotation_id": 2,
       "status": "PENDING",
-      "total_amount": 440.00,
-      "deposit_amount": 100.00,
-      "outstanding_balance": 340.00,
+      "total_amount": 440.0,
+      "deposit_amount": 100.0,
+      "outstanding_balance": 340.0,
       "created_at": "2026-05-02T15:00:00"
     },
     {
@@ -298,37 +340,35 @@
       "employee_id": 2,
       "quotation_id": 3,
       "status": "DELIVERED",
-      "total_amount": 175.00,
-      "deposit_amount": 175.00,
-      "outstanding_balance": 0.00,
+      "total_amount": 175.0,
+      "deposit_amount": 175.0,
+      "outstanding_balance": 0.0,
       "created_at": "2026-05-03T17:00:00"
     }
   ],
-
   "payments": [
     {
       "payment_id": 1,
       "sale_id": 1,
-      "amount_paid": 200.00,
+      "amount_paid": 200.0,
       "method": "CARD",
       "paid_at": "2026-05-01T13:30:00"
     },
     {
       "payment_id": 2,
       "sale_id": 2,
-      "amount_paid": 100.00,
+      "amount_paid": 100.0,
       "method": "TRANSFER",
       "paid_at": "2026-05-02T15:20:00"
     },
     {
       "payment_id": 3,
       "sale_id": 3,
-      "amount_paid": 175.00,
+      "amount_paid": 175.0,
       "method": "CASH",
       "paid_at": "2026-05-03T17:15:00"
     }
   ],
-
   "workOrders": [
     {
       "order_id": 1,
@@ -364,7 +404,6 @@
       "created_at": "2026-05-03T18:00:00"
     }
   ],
-
   "notifications": [
     {
       "notification_id": 1,
@@ -391,7 +430,6 @@
       "sent_at": "2026-05-04T09:30:00"
     }
   ],
-
   "analyticsReports": [
     {
       "report_id": 1,
@@ -399,17 +437,17 @@
       "generated_by": 1,
       "period": "2026-04",
       "generated_at": "2026-05-01T20:00:00",
-      "total_revenue": 12000.50,
+      "total_revenue": 12000.5,
       "total_transactions": 40,
       "conversion_rate": 72.5,
       "average_delivery_days": 4.5,
       "on_time_delivery_rate": 90.0,
       "rework_rate": 3.0,
       "total_orders": 38,
-      "pending_balance_0_7": 1200.00,
-      "pending_balance_8_15": 400.00,
-      "pending_balance_16_30": 150.00,
-      "pending_balance_over_30": 50.00
+      "pending_balance_0_7": 1200.0,
+      "pending_balance_8_15": 400.0,
+      "pending_balance_16_30": 150.0,
+      "pending_balance_over_30": 50.0
     },
     {
       "report_id": 2,
@@ -424,10 +462,10 @@
       "on_time_delivery_rate": 92.1,
       "rework_rate": 2.1,
       "total_orders": 48,
-      "pending_balance_0_7": 1000.00,
-      "pending_balance_8_15": 350.00,
-      "pending_balance_16_30": 120.00,
-      "pending_balance_over_30": 40.00
+      "pending_balance_0_7": 1000.0,
+      "pending_balance_8_15": 350.0,
+      "pending_balance_16_30": 120.0,
+      "pending_balance_over_30": 40.0
     },
     {
       "report_id": 3,
@@ -435,20 +473,19 @@
       "generated_by": 1,
       "period": "2026-06",
       "generated_at": "2026-07-01T20:00:00",
-      "total_revenue": 16200.00,
+      "total_revenue": 16200.0,
       "total_transactions": 58,
       "conversion_rate": 80.0,
       "average_delivery_days": 3.8,
       "on_time_delivery_rate": 95.0,
       "rework_rate": 1.5,
       "total_orders": 56,
-      "pending_balance_0_7": 800.00,
-      "pending_balance_8_15": 200.00,
-      "pending_balance_16_30": 100.00,
-      "pending_balance_over_30": 20.00
+      "pending_balance_0_7": 800.0,
+      "pending_balance_8_15": 200.0,
+      "pending_balance_16_30": 100.0,
+      "pending_balance_over_30": 20.0
     }
   ],
-
   "staffMetrics": [
     {
       "staff_metric_id": 1,
@@ -456,7 +493,7 @@
       "employee_name": "Lucia Ramirez",
       "quotations_issued": 15,
       "sales_closed": 10,
-      "total_revenue": 4500.00
+      "total_revenue": 4500.0
     },
     {
       "staff_metric_id": 2,
@@ -464,7 +501,7 @@
       "employee_name": "Lucia Ramirez",
       "quotations_issued": 18,
       "sales_closed": 14,
-      "total_revenue": 6200.00
+      "total_revenue": 6200.0
     },
     {
       "staff_metric_id": 3,
@@ -472,7 +509,7 @@
       "employee_name": "Lucia Ramirez",
       "quotations_issued": 20,
       "sales_closed": 16,
-      "total_revenue": 7100.00
+      "total_revenue": 7100.0
     }
   ]
 }
