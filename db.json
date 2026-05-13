@@ -319,32 +319,6 @@
       "address": "Av. Salud 789"
     }
   ],
-  "suppliers": [
-    {
-      "supplier_id": 1,
-      "name": "Optic Supplier SAC",
-      "contact_person": "Juan Perez",
-      "phone": "999888777",
-      "email": "contacto@opticsupplier.com",
-      "address": "Av. Principal 123"
-    },
-    {
-      "supplier_id": 2,
-      "name": "Lens Import Peru",
-      "contact_person": "Maria Gomez",
-      "phone": "988777666",
-      "email": "ventas@lensimport.pe",
-      "address": "Calle Secundaria 456"
-    },
-    {
-      "supplier_id": 3,
-      "name": "Health Vision SAC",
-      "contact_person": "Carlos Ruiz",
-      "phone": "977666555",
-      "email": "info@healthvision.com",
-      "address": "Av. Salud 789"
-    }
-  ],
   "products": [
     {
       "id": 1,
