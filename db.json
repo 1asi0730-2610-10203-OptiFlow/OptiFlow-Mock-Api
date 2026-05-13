@@ -243,6 +243,7 @@
   ],
   "products": [
     {
+      "id": 1,
       "product_id": 1,
       "product_uuid": "prod-001-uuid",
       "sku": "FRM-1001",
@@ -259,6 +260,7 @@
       "supplier_id": 1
     },
     {
+      "id": 2,
       "product_id": 2,
       "product_uuid": "prod-002-uuid",
       "sku": "LNS-2001",
@@ -275,6 +277,7 @@
       "supplier_id": 2
     },
     {
+      "id": 3,
       "product_id": 3,
       "product_uuid": "prod-003-uuid",
       "sku": "SOL-3001",
