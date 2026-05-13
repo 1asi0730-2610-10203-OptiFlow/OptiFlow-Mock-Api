@@ -724,5 +724,6 @@
       "sales_closed": 16,
       "total_revenue": 7100.0
     }
-  ]
+  ],
+  "audit_logs": []
 }
